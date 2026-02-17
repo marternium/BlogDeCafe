@@ -1,0 +1,147 @@
+/* Fonts */
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "PTSansRegular";
+    src: url("../fonts/PTSans-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "PTSansBold";
+    src: url("../fonts/PTSans-Bold.ttf");
+    font-weight: 700;
+}
+
+/* Variables */
+:root {
+    --fontHeading: "PTSansRegular", sans-serif;
+    --fontHeadingBold: "PTSansBold", sans-serif;
+    --fontTexts: "OpenSans", sans-serif;
+
+    --colorPrimary: #784d3c;
+    --colorWhite: #fff;
+    --colorBlack: #000;
+}
+
+/* Globals */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: var(--fontTexts);
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, h3, h4 {
+    font-family: var(--fontHeadingBold);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+    font-family: var(--fontHeading);
+    line-height: 1.2;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utilities */
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.center-text {
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60rem;
+    color: var(--colorWhite);
+}
+
+.header__text {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header__text {
+        margin-top: 15rem;
+    }
+}
+
+.bar {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__bold {
+    font-family: var(--fontHeadingBold);
+}
+
+.logo__name {
+    text-align: center;
+    color: var(--colorWhite);
+}
+
+/* Navigation */
+.navigation__link {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--colorWhite);
+}
+
+@media (min-width: 768px) {
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: auto;
+    }
+    .logo {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: auto;
+        flex-wrap: nowrap;
+    }
+}
