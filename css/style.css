@@ -211,3 +211,39 @@ img {
 .widget-course__info {
     font-family: var(--fontTexts);
 }
+
+/* Footer */
+.footer {
+    background-color: var(--colorBlack);
+}
+
+.footer__name {
+    font-family: var(--fontHeading);
+    color: var(--colorWhite);
+    font-size: 3rem;
+}
+
+.footer__bold {
+    font-family: var(--fontHeadingBold);
+}
+
+.footer__navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer__link {
+    color: var(--colorWhite);
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
