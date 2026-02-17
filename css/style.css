@@ -187,3 +187,27 @@ img {
 .button--primary {
     background-color: var(--colorBlack);
 }
+
+/* Courses */
+.courses {
+    list-style: none;
+}
+
+.widget-course {
+    border-bottom: 1px solid var(--colorGray);
+    margin-bottom: 2rem;
+}
+
+.widget-course:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-course__label {
+    font-family: var(--fontHeadingBold);
+    font-size: 2rem;
+}
+
+.widget-course__info {
+    font-family: var(--fontTexts);
+}
