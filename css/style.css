@@ -258,3 +258,23 @@ img {
         align-items: center;
     }
 }
+
+/* Courses */
+.course {
+    border-bottom: 1px solid var(--colorGray);
+    margin-bottom: 2rem;
+}
+
+.course:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 4rem;
+        align-items: center;
+    }
+}
