@@ -21,6 +21,7 @@
     --fontTexts: "OpenSans", sans-serif;
 
     --colorPrimary: #784d3c;
+    --colorGray: #e1e1e1;
     --colorWhite: #fff;
     --colorBlack: #000;
 }
@@ -144,4 +145,45 @@ img {
         width: auto;
         flex-wrap: nowrap;
     }
+}
+
+/* Main Content */
+@media (min-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entry {
+    border-bottom: 1px solid var(--colorGray);
+    margin-bottom: 2rem;
+}
+
+.entry:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    background-color: var(--colorPrimary);
+    padding: 1rem 3rem;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    font-family: var(--fontHeadingBold);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+@media (min-width:768px) {
+    .button {
+        display: inline-block;
+    }
+}
+
+.button--primary {
+    background-color: var(--colorBlack);
 }
