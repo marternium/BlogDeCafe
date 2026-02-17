@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog De Café</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="bar">
+                <a href="/" class="logo">
+                    <h1 class="logo__name no-margin text-center">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navigation">
+                    <a href="nosotros.html" class="navigation__link">Nosotros</a>
+                    <a href="cursos.html" class="navigation__link">Cursos</a>
+                    <a href="contacto.html" class="navigation__link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__text">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+    <main class="container">
+        <h3 class="center-text">Contacto</h3>
+        <div class="contact-bg"></div>
+        <form class="form">
+            <div class="field">
+                <label for="name" class="field__label">Nombre</label>
+                <input class="field__field" type="text" placeholder="Tu Nombre" id="name">
+            </div>
+            <div class="field">
+                <label for="email" class="field__label">Email</label>
+                <input class="field__field" type="email" placeholder="Tu Email" id="email">
+            </div>
+            <div class="field">
+                <label for="message" class="field__label">Mensaje</label>
+                <textarea class="field__field" placeholder="Tu Mensaje" id="message"></textarea>
+            </div>
+            <div class="field field__button">
+                <input type="submit" value="Enviar" class="button button--primary">
+            </div>
+        </form>
+    </main><!-- .main-content -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <a href="index.html" class="footer__name no-margin text-center">Blog<span class="footer__bold">DeCafé</span></a>
+            <nav class="footer__navigation">
+                <a href="nosotros.html" class="footer__link">Nosotros</a>
+                <a href="cursos.html" class="footer__link">Cursos</a>
+                <a href="contacto.html" class="footer__link">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
