@@ -1,10 +1,12 @@
 # Blog de café
 Un blog sobre café y cursos.
 Tercer proyectos del curso de desarrollo web con html, css, js, mysql y php para seguir practicando HTML y CSS.
+Adicional, utilicé JS para la validación del formulario de contacto.
 
 ## Tecnologías
 - HTML
 - CSS
+- JS
 
 ## Performance y SEO
 También use este proyecto para ver técnicas para optimizar el performance y el SEO.
